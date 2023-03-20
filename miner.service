@@ -1,0 +1,13 @@
+[Unit]
+Description=bot
+After=network.service
+
+[Service]
+User=root
+Type=simple
+Restart=always
+ExecStart=/root/nanominer-linux-3.7.7/miner.sh
+WorkingDirectory=/root/nanominer-linux-3.7.7
+
+[Install]
+WantedBy=multi-user.target
