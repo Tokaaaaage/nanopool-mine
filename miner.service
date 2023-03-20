@@ -6,8 +6,8 @@ After=network.service
 User=root
 Type=simple
 Restart=always
-ExecStart=/root/nanominer-linux-3.7.7/miner.sh
-WorkingDirectory=/root/nanominer-linux-3.7.7
+ExecStart=/root/nanominer/miner.sh
+WorkingDirectory=/root/nanominer
 
 [Install]
 WantedBy=multi-user.target
